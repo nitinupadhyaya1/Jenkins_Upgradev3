@@ -12,6 +12,11 @@ pipeline {
                         echo 'Building Sample Maven Project'
                   }
             }
+	    stage('PreProd') {
+	 	  steps {
+			echo 'This is PreProd that is managed by IMPL team'
+			}
+			     }	
             stage('Deploy') {
                   steps {
                         echo "Deploying in Staging Area"
